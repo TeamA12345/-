@@ -3,75 +3,205 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>이어폰 A/B Test - 무료배송</title>
+<title>ShopMall - Version A</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-font-family:Arial;
-background:#f5f5f5;
+background:#f6f7fb;
+}
+
+header{
+background:white;
+padding:20px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #ddd;
+}
+
+.logo{
+font-size:36px;
+font-weight:bold;
+color:#1f66ff;
+}
+
+.search{
+width:50%;
+padding:15px;
+border-radius:15px;
+border:1px solid #ddd;
+}
+
+.nav{
+background:white;
 display:flex;
 justify-content:center;
-padding-top:50px;
-}
-
-.card{
-background:white;
+gap:60px;
 padding:20px;
-width:300px;
+font-weight:bold;
+border-bottom:1px solid #ddd;
+}
+
+.container{
+display:flex;
+padding:50px;
+gap:60px;
+align-items:center;
+}
+
+.left{
+width:45%;
+}
+
+.left img{
+width:100%;
+max-width:500px;
+}
+
+.right{
+width:55%;
+}
+
+.title{
+font-size:60px;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+.old-price{
+font-size:40px;
+color:#999;
+text-decoration:line-through;
+}
+
+.discount{
+font-size:55px;
+font-weight:bold;
+color:#ff3030;
+margin-left:20px;
+}
+
+.line{
+margin:20px 0;
+height:1px;
+background:#ddd;
+}
+
+.big-sale{
+font-size:70px;
+font-weight:bold;
+color:#ff3030;
+margin-top:20px;
+}
+
+.message{
+font-size:50px;
+font-weight:bold;
+}
+
+.blue-box{
+margin-top:30px;
+background:#edf4ff;
+padding:25px;
+font-size:30px;
+font-weight:bold;
+color:#1f66ff;
 border-radius:15px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.buy-btn{
+display:block;
+margin-top:25px;
+text-decoration:none;
 text-align:center;
-}
-
-.shipping{
-background:#1976d2;
+background:#1565ff;
 color:white;
-padding:8px;
+padding:30px;
 border-radius:20px;
+font-size:35px;
 font-weight:bold;
 }
 
-.price{
-font-size:24px;
-font-weight:bold;
-color:black;
-}
-
-button{
-background:black;
-color:white;
-padding:10px 20px;
-border:none;
-border-radius:8px;
-cursor:pointer;
-}
 </style>
 
 </head>
 
 <body>
 
-<div class="card">
+<header>
 
-<h2>프리미엄 무선 이어폰</h2>
-
-<p>★★★★★ (4.8)</p>
-
-<div class="shipping">
-무료배송
+<div class="logo">
+🛒 ShopMall
 </div>
 
-<br>
+<input class="search" placeholder="찾고 싶은 상품을 검색해보세요!">
 
-<div class="price">
+</header>
+
+<div class="nav">
+
+<div>전체 카테고리</div>
+<div>베스트</div>
+<div>신상품</div>
+<div>특가상품</div>
+<div>이벤트</div>
+<div>고객센터</div>
+
+</div>
+
+<div class="container">
+
+<div class="left">
+
+<img src="airphone.png">
+
+</div>
+
+<div class="right">
+
+<div class="title">
+🎧 AirPods
+</div>
+
+<div>
+
+<span class="old-price">
 100,000원
+</span>
+
+<span class="discount">
+20,000원 할인
+</span>
+
 </div>
 
-<br>
+<div class="line"></div>
 
-<button>
-상세보기
-</button>
+<div class="message">
+지금 구매 시
+</div>
+
+<div class="big-sale">
+20,000원 할인
+</div>
+
+<div class="blue-box">
+🏷 지금 쇼핑하기
+</div>
+
+<a href="#" class="buy-btn">
+🛒 지금 구매하기
+</a>
+
+</div>
 
 </div>
 
